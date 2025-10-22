@@ -81,7 +81,7 @@ function Carousel({
 
   return (
     <div
-      className="relative h-[60vh] min-h-[400px] lg:h-[70vh] w-full overflow-hidden rounded-xl"
+      className="relative h-[30vh] md:h-[60vh] min-h-[200px] lg:h-[70vh] w-full overflow-hidden rounded-xl"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
@@ -104,7 +104,7 @@ function Carousel({
       <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-12">
         <div className="max-w-2xl">
           {/* Title */}
-          <h1 className="text-3xl lg:text-5xl font-bold text-white mb-2 text-glow animate-fade-in">
+          <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold text-white mb-2 text-glow animate-fade-in">
             {title}
           </h1>
 
@@ -131,8 +131,11 @@ function Carousel({
           </div>
 
           {/* Overview */}
-          <p className="text-white/90 text-sm lg:text-base mb-6 leading-relaxed animate-fade-in stagger-2">
+          <p className="hidden md:block text-white/90 text-sm lg:text-base mb-6 leading-relaxed animate-fade-in stagger-2">
             {truncateText(currentItem.overview, 200)}
+          </p>
+          <p className="text-white/90 text-sm lg:text-base mb-6 leading-relaxed animate-fade-in stagger-2">
+            {truncateText(currentItem.overview, 90)}
           </p>
 
           {/* Action Buttons */}

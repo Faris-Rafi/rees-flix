@@ -33,7 +33,7 @@ export default function TopRated() {
       <div className="flex justify-between items-center">
         <div className="flex gap-2">
           <div className="border-8 rounded border-l border-primary"></div>
-          <h2 className="text-3xl font-bold">Top Rated</h2>
+          <h2 className="text-xl md:text-3xl font-bold">Top Rated</h2>
         </div>
         <Tabs defaultValue={activeTab}>
           <TabsList>

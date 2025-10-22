@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="flex flex-col justify-center items-center">
       <Header />
-      <main className="container w-full mt-8">
+      <main className="container mt-8 px-4 lg:px-0">
         <HeroCarousel />
         <NowPlaying />
         <TrendingToday />

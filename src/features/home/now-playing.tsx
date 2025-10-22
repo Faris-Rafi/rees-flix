@@ -35,7 +35,7 @@ export default function NowPlaying() {
       <div className="flex justify-between items-center">
         <div className="flex gap-2">
           <div className="border-8 rounded border-l border-primary"></div>
-          <h2 className="text-3xl font-bold">
+          <h2 className="text-xl md:text-3xl font-bold">
             {activeTab == "movies" ? "Now Playing" : "On The Air"}
           </h2>
         </div>
