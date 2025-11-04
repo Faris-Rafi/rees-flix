@@ -173,6 +173,6 @@ export function getYear(item: Movie | TVShow): string {
   return date ? new Date(date).getFullYear().toString() : '';
 }
 
-export function getMediaType(item: Movie | TVShow): 'movie' | 'tv' {
-  return isMovie(item) ? 'movie' : 'tv';
+export function getMediaType(item: Movie | TVShow): 'Movie' | 'Series' {
+  return isMovie(item) ? 'Movie' : 'Series';
 }

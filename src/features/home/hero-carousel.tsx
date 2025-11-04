@@ -120,7 +120,7 @@ function Carousel({
               variant="secondary"
               className="bg-white/20 text-white border-white/30"
             >
-              {mediaType === "movie" ? "Movie" : "TV Show"}
+              {mediaType === "Movie" ? "Movie" : "TV Show"}
             </Badge>
             <div className="flex items-center gap-1">
               <span className="text-yellow-400">★</span>

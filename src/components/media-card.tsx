@@ -16,7 +16,7 @@ export default function MediaCard({
       ref={ref}
       src={poster}
       alt={title}
-      className="h-full w-[150px] md:w-[200px] object-cover transition-transform duration-300 group-hover:scale-105"
+      className="rounded-lg w-[150px] md:w-[200px] h-full object-cover transition-transform duration-300 group-hover:scale-95 inset-0"
       loading="lazy"
     />
   );
